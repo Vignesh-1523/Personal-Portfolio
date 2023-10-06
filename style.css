@@ -10,7 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    scroll-behavior: smooth;
 }
 ::before, ::after{
     box-sizing: border-box;
@@ -20,7 +21,8 @@ span{
 }
 .btn{
     background-color: red;
-    padding: 10px 20px;
+    /* padding: 10px 20px; ----for poppins---- */
+    padding: 15px 30px;
     margin-right: 10px;
     border-radius: 30px;
     border: none;
@@ -30,6 +32,7 @@ span{
 .btn a{
     text-decoration: none;
     color: white;
+    letter-spacing: 1px; /* not for poppins */
 }
 .btn:hover{
     transform: scale(1.15);
@@ -101,6 +104,9 @@ span{
 .nav li a i{
     font-size: 20px;
     margin-bottom: 4px;
+}
+.nav li a:hover{
+    color: red;
 }
 .main-content{
     padding-left: 20%;
@@ -176,22 +182,24 @@ span{
     display: block;
 }
 .about .about-title{
-    background-color: red;
+    /* background-color: red; */
     padding: 5px;
     position: relative;
 }
 .about .about-title h2{
-    padding: 5px;
-    background-color: black;
-    color: white;
+    /* padding: 5px; */
+    /* background-color: black; */
+    color: black;
+    /* font-size: 2em; ----for poppins---- */
+    font-size: 2.3em;
     position: relative;
 }
 .about .about-title h2::before{
     content: '';
-    width: 40px;
-    height: 5px;
+    width: 50px;
+    height: 3px;
     border-radius: 5px;
-    background-color: blue;
+    background-color: red;
     position: absolute;
     top: 100%;
     left: 0;
@@ -199,33 +207,37 @@ span{
 .about .about-title h2::after{
     content: '';
     width: 25px;
-    height: 5px;
+    height: 3px;
     border-radius: 5px;
-    background-color: blue;
+    background-color: red;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 .content-row{
     margin-block: 40px;
     display: block;
-    padding: 10px;
-    background-color: white;
+    /* padding: 10px; */
+    /* background-color: white; */
 }
 .content-row .title{
-    background-color: rgb(20, 205, 230);
+    /* background-color: rgb(20, 205, 230); */
     margin-bottom: 20px;
+    font-size: 1em;
 }
 .content-row .para{
-    font-size: 14px;
-    background-color: rgb(20, 205, 230);
+    /* font-size: 14px; ----for poppins---- */
+    font-size: 16px;
+    line-height: 1.5; /* no need for poppins */
+    color: var(--light-black);
+    /* background-color: rgb(20, 205, 230); */
 }
 .about .container{
     /* position: relative; */
     max-width: 100%;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     /* display: grid;
     grid-template-columns: 1.5fr 1fr; */
@@ -239,32 +251,41 @@ span{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* max-width: 60%;  */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin-bottom: 40px;
 }
 .container .skill-container{
     flex: 0 0 40%;
     /* max-width: 40%; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 .container .info .info-row{
     display: flex;
 }
 .info .info-row{
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    border-bottom: 1px solid rgb(211, 210, 210);
+    padding-bottom: 10px;
     margin: 5px;
 }
 .info .info-row h3{
     font-size: 15px;
 }
 .info .info-row h3 span{
+    font-size: 14px;
+    letter-spacing: 0.5px;
     font-weight: 300;
+    margin-left: 3px;
+    color: var(--light-black);
 }
 .container .buttons{
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 10px;
     margin-bottom: 20px;
 }
 .buttons button{
+    margin-bottom: 10px;
     transition: 0.3s;
 }
 .buttons button:hover{
@@ -275,18 +296,19 @@ span{
     color: white;
 } 
 .skill-container{
-    background-color: aquamarine;
-    padding: 10px;
+    /* background-color: aquamarine; */
+    padding-inline : 10px;
 }
 .skill-container .skill-row{
     width: 100%;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     padding: 5px;
+    margin-bottom: 10px;
 }
 .skills{
     width: 100%;
-    margin-block: 5px;
-    background-color: white;
+    padding-bottom: 20px;
+    /* background-color: white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,7 +318,6 @@ span{
     font-size: 16px;
 }
 .skills h3{
-    padding: 5px;
     width: 100%;
 }
 .skill-row .progress-bar{
@@ -311,6 +332,354 @@ span{
     background-color: red;
     border-radius: 10px;
 }
+.about .edu-detail{
+    width: 45%;
+    display: block;
+    margin-top: 20px;
+}
+.edu-detail h2{
+    margin-bottom: 20px;
+}
+.edu-detail .education{
+    background-color: white;
+    box-shadow: 0 0 25px rgb(177, 176, 176);
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+.education::after{
+    content: '';
+    height: 82%;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    margin-left: -15px;
+    border-radius: 5px;
+}
+.education .details::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+}
+.education .details{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.details .date{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.details span{
+    color: rgb(114, 114, 114);
+    font-size: 13px;
+    margin-left: 2px;
+}
+.details i{
+    font-size: 15px;
+    color: rgb(36, 36, 36);
+    margin-bottom: 2px;
+}
+
+/* service section */
 
 
+.service{
+    display: block;
+}
+.service .service-title{
+    /* background-color: red; */
+    padding: 5px;
+    position: relative;
+}
+.service .service-title h2{
+    /* padding: 5px; */
+    /* background-color: black; */
+    color: black;
+    /* font-size: 2em; ----for poppins---- */
+    font-size: 2.3em;
+    position: relative;
+}
+.service .service-title h2::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.service .service-title h2::after{
+    content: '';
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 7px;
+}
+.service-container{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.each-service{
+    display: block;
+    background-color: #fff;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    position: relative;
+}
+.each-service .logo{
+    display: flex;
+    justify-content: center;
+    /* background: #000000; */
+    padding: 5px;
+    margin-block: 20px;
+}
+.logo i{
+    font-size: 2.2em;
+}
+.each-service h3{
+    text-align: center;
+    margin-block: 10px;
+}
+.each-service p{
+    text-align: center;
+    font-size: 18px;
+    color: var(--light-black);
+    line-height: 1.3;
+    padding: 5px;
+}
+
+/* portfolio section starts */
+
+.portfolio{
+    display: block;
+}
+.portfolio .portfolio-title{
+    /* background-color: red; */
+    padding: 5px;
+    position: relative;
+}
+.portfolio .portfolio-title h2{
+    /* padding: 5px; */
+    /* background-color: black; */
+    color: black;
+    /* font-size: 2em; ----for poppins---- */
+    font-size: 2.3em;
+    position: relative;
+}
+.portfolio .portfolio-title h2::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.portfolio .portfolio-title h2::after{
+    content: '';
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 7px;
+}
+.portfolio .text{
+    display: flex;
+    padding: 5px;
+    margin-top: 40px;
+}
+.text p{
+    font-size: 20px;
+}
+.portfolio .container{
+    max-width: 100%;
+    /* background-color: antiquewhite; */
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+}
+.portfolio .container .outer-box{
+    max-width: 400px;
+    padding: 5px;
+    height: 220px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 10px 5px 0 5px;
+}
+.outer-box .inner-box{
+    width: 100%;
+    /* background-color: green; */
+    /* padding: 5px; */
+    height: 100%;
+    object-fit: cover;
+}
+.outer-box .inner-box img{
+    width: 100%;
+    height: 100%;
+}
+
+/* contact section goes here */
+
+.contact{
+    display: block;
+}
+.contact .contact-title{
+    /* background-color: red; */
+    padding: 5px;
+    position: relative;
+}
+.contact .contact-title h2{
+    /* padding: 5px; */
+    /* background-color: black; */
+    color: black;
+    /* font-size: 2em; ----for poppins---- */
+    font-size: 2.3em;
+    position: relative;
+}
+.contact .contact-title h2::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.contact .contact-title h2::after{
+    content: '';
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 7px;
+}
+.contact .queries{
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin-block: 20px;
+}
+.queries h2{
+    color: red;
+}
+.queries h3{
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.contact .contact-info{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-info .each-contact{
+    padding: 10px;
+    width: 180px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+.each-contact span{
+    font-size: 2em;
+}
+.each-contact h3{
+    margin-block: 5px;
+}
+.each-contact p{
+    font-size: 17px;
+    color: var(--light-black);
+}
+.each-contact p a{
+    text-decoration: none;
+    color: var(--light-black);
+}
+.form-section{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-block: 20px;
+}
+.form-section .message{
+    margin-block: 10px;
+    text-transform: uppercase;
+}
+.message h2{
+    color: red;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.message h3{
+    font-size: 12px;
+}
+.form-section .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: #000000; */
+    margin-top: 50px;
+}
+.form input{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    /* outline: none; */
+    width: 47%;
+    padding-left: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.form .subject{
+    width: 100%;
+}
+.form textarea{
+    width: 100%;
+    margin: 10px 10px 25px 10px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 17px;
+    border: none;
+    color: var(--light-black);
+}
+.form button{
+    margin-left: 10px;
+    width: 200px;
+    color: white;
+    letter-spacing: 1px;
+}
+.form button:hover{
+    transform: none;
+}
 
