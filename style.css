@@ -671,6 +671,7 @@ span{
     padding: 20px;
     font-size: 17px;
     border: none;
+    outline: none;
     color: var(--light-black);
 }
 .form button{
