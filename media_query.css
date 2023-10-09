@@ -1,0 +1,263 @@
+@media only screen and (max-width: 720px) {
+    .aside{
+        position: absolute;
+        left: -400px;
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    /* home */
+    .info-content{
+        width: 100%;
+    }
+    .info-content h2{
+        font-size: 3.4em;
+        line-height: 1;
+    }
+    .info-content h2 #hello{
+        display: block;
+    }
+    .info-content h2 #name{
+        font-size: 1.3em;
+    }
+    .info-content #typing{
+        margin-top: 40px;
+    }
+    .info-content p{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .info-content button{
+        width: 180px;
+        font-size: 23px;
+    }
+    .image{
+        min-width: 600px;
+        /* background-color: aqua; */
+    }
+    .image img{
+        width: 100%;
+    }
+
+    /* about */
+
+    .about-title{
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .about .about-title h2:before{
+        width: 100px;
+        height: 5px;
+    }
+    .about .about-title h2:after{
+        width: 50px;
+        height: 5px;
+        margin-top: 10px;
+    }
+    .content-row .title{
+        font-size: 27px;
+    }
+    .content-row .para{
+        font-size: 1.8em;
+        margin-bottom: 100px;
+    }
+    .about .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .info .info-row{
+        /* background-color: aliceblue; */
+        padding-block: 20px;
+        width: 100%;
+        /* width: 320px; */
+        border-bottom: 1px solid rgb(155, 154, 154);
+    }
+    .info .info-row h3{
+        font-size: 32px;
+    }
+    .info .info-row h3 span{
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+    .container .buttons{
+        width: 100%;
+        margin-block: 60px;
+    }
+    .buttons button{
+        padding: 20px;
+        padding-inline: 40px;
+        border-radius: 40px;
+    }
+    .buttons button a {
+        font-size: 23px;
+    }
+    .skill-container{
+        margin-bottom: 50px;
+    }
+    .skills{
+        padding-top: 10px;
+    }
+    .skills :where(h3, span){
+        font-size: 25px;
+    }
+    .edu-detail{
+        margin-bottom: 50px;
+    }
+    .edu-detail h2{
+        font-size: 50px;
+    }
+    .edu-detail .details{
+        font-size: 35px;
+        margin-left: 15px;
+    }
+    .edu-detail .details span{
+        font-size: 30px;
+    }
+    .edu-detail .details i{
+        font-size: 30px;
+    }
+    .education::after{
+        height: 90%;
+        width: 4px;
+        margin-top: 12px;
+    }
+    .education .details::before{
+        width: 20px;
+        height: 20px;
+        margin-top: 12px;
+        margin-left: -38px;
+    }
+    
+    /* service */
+    
+    .service-title{
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .service .service-title h2:before{
+        width: 100px;
+        height: 5px;
+    }
+    .service .service-title h2:after{
+        width: 50px;
+        height: 5px;
+        margin-top: 10px;
+    }
+    .service-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+    }
+    .each-service i{
+        font-size: 60px;
+    }
+    .each-service h3{
+        margin-top: 30px;
+        font-size: 2.4em;
+    }
+    .each-service p{
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    /* portfolio */
+    
+    .portfolio-title{
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .portfolio .portfolio-title h2:before{
+        width: 100px;
+        height: 5px;
+    }
+    .portfolio .portfolio-title h2:after{
+        width: 50px;
+        height: 5px;
+        margin-top: 10px;
+    }
+    .portfolio .text{
+        display: flex;
+        padding: 5px;
+        margin-top: 40px;
+    }
+    .text p{
+        font-size: 30px;
+    }
+    .portfolio .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio .container .outer-box{
+        min-width: 100%;
+        padding: 5px;
+        height: 400px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin: 10px 5px 0 5px;
+    }
+
+    /* contact */
+
+    .contact-title{
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .contact .contact-title h2:before{
+        width: 100px;
+        height: 5px;
+    }
+    .contact .contact-title h2:after{
+        width: 50px;
+        height: 5px;
+        margin-top: 10px;
+    }
+    .queries h2{
+        font-size: 45px;
+    }
+    .queries h3{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .each-contact span{
+        font-size: 3em;
+    }
+    .each-contact h3{
+        margin-block: 15px;
+        font-size: 30px;
+    }
+    .each-contact p{
+        font-size: 28px;
+        word-wrap: break-word;
+    }
+    .message h2{
+        font-size: 32px;
+    }
+    .message h3{
+        font-size: 30px;
+    }
+    .form-section .form{
+        margin-top: 80px;
+    }
+    .form input{
+        padding: 25px;
+        width: 100%;
+        padding-left: 25px;
+        font-size: 25px;
+    }
+    .form .subject{
+        font-size: 25px;    }
+    .form textarea{
+        font-size: 30px;
+    }
+    .form button{
+        width: 250px;
+        border-radius: 40px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    
+}
