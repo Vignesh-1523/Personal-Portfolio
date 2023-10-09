@@ -111,10 +111,12 @@ span{
 .main-content{
     padding-left: 20%;
 }
+.menu{
+    color: red;
+    position: absolute;
+    font-size: 50px;
+}
 .section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 30px;
     background-color: var(--bg-BL-white);
     /* width: 80%;
@@ -125,15 +127,24 @@ span{
 .hidden{
     display: none !important;
 }
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .info-content{
     display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: 400px; 
+    /* margin-right: 50px; */
     line-height: 2;
+    /* background-color: blanchedalmond; */
 }
 .info-content h2{
     font-weight: 600;
     margin-bottom: 10px;
+}
+.info-content h2 #hello{
+    color: black;
 }
 .info-content h2 span{
     color: red;
@@ -147,13 +158,15 @@ span{
 }
 .info-content p{
     font-size: 15px;
+    /* word-wrap: break-word; */
 }
 .info-content button{
     width: 120px;
     margin-top: 60px;
 }
 .image{
-    margin: 30px;
+    max-width: 335px;
+    margin: 50px auto;
     padding: 50px;
     position: relative;
     /* background-color: antiquewhite; */
@@ -621,6 +634,7 @@ span{
     font-size: 17px;
     color: var(--light-black);
 }
+
 .each-contact p a{
     text-decoration: none;
     color: var(--light-black);
