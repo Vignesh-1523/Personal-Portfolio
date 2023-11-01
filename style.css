@@ -21,12 +21,14 @@ span{
 }
 .btn{
     background-color: red;
+    color: white;
     /* padding: 10px 20px; ----for poppins---- */
     padding: 15px 30px;
     margin-right: 10px;
     border-radius: 30px;
     border: none;
     outline: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 .btn a{
@@ -35,7 +37,7 @@ span{
     letter-spacing: 1px; /* not for poppins */
 }
 .btn:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 } 
 .aside{
     background-color: var(--bg-white);
@@ -657,7 +659,7 @@ span{
 .message h3{
     font-size: 12px;
 }
-.form-section .form{
+.form-section .form form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -688,13 +690,14 @@ span{
     outline: none;
     color: var(--light-black);
 }
-.form button{
+.form .button{
     margin-left: 10px;
     width: 200px;
     color: white;
     letter-spacing: 1px;
 }
-.form button:hover{
+.form .button:hover{
     transform: none;
+    cursor: pointer;
 }
 
